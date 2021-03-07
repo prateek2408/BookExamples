@@ -1,0 +1,20 @@
+syntax = "proto3";
+package myfirstrpc;
+
+option go_package = ".;myfirstrpc";
+
+//A sample service which contains all our rpc.
+service MyService{
+ //The definition of rpc.
+ rpc MyFunc(Request) returns (StringMessage) {}
+}
+
+//Empty Request.
+message Request {
+}
+
+//The message to Return when rpc is invoked.
+message StringMessage {
+    string  reply = 1;
+}
+
