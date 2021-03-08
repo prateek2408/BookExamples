@@ -3,7 +3,7 @@ package main
 import (
 	"net"
 
-	pb "hello-world"
+	pb "github.com/prateek2408/BookExamples/gRPC/proto/myservice"
 
 	"google.golang.org/grpc"
 )

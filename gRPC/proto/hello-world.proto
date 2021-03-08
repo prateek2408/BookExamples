@@ -1,7 +1,7 @@
 syntax = "proto3";
-package myfirstrpc;
+package myservice;
 
-option go_package = ".;myfirstrpc";
+option go_package = "github.com/prateek2408/BookExamples/gRPC/proto/myservice";
 
 //A sample service which contains all our rpc.
 service MyService{

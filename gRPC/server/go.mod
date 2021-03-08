@@ -1,4 +1,4 @@
-module hello-world
+module github.com/prateek2408/BookExamples/gRPC
 
 go 1.15
 
