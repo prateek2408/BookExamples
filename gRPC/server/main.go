@@ -29,6 +29,7 @@ func main() {
 	gServ := grpc.NewServer()
 	//Binding the stub function with the func we created
 	pb.RegisterMyServiceServer(gServ, &server{})
+	fmt.Print("gRPC server starting at port 2408")
 	if err := gServ.Serve(plistener); err != nil {
 		panic("Unable to start gRPC server")
 	}

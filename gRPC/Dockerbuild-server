@@ -1,0 +1,11 @@
+FROM golang
+ADD . /opt/myrpc
+WORKDIR /opt/myrpc
+RUN  go build -o myserver server/main.go
+
+FROM ubuntu
+WORKDIR /myrpc/
+COPY  --from=0 /opt/myrpc/myserver .
+EXPOSE 2408
+CMD ["./myserver"]
+

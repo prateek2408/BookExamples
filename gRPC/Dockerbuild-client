@@ -1,0 +1,8 @@
+FROM python:3.6
+ADD client /opt/client
+ADD proto/*.py /opt/client/.
+WORKDIR /opt/client
+RUN pip install grpcio \
+        grpcio-tools
+CMD ["/usr/local/bin/python", "/opt/client/client.py"]
+
