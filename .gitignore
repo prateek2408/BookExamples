@@ -2,3 +2,4 @@ main
 myserver
 *.swo
 *.swp
+.terraform*
