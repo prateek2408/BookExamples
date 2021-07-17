@@ -1,4 +1,5 @@
 provider "google" {
-  project     = "my-project-id"
-  region      = "us-central1"
+  project     = var.Project
+  credentials = file(var.SvcAcc)
+  region      = "us-west1"
 }

@@ -3,3 +3,7 @@ myserver
 *.swo
 *.swp
 .terraform*
+*.tfstate
+myplan
+*.backup
+tf/*.json

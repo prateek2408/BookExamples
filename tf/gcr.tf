@@ -1,4 +1,3 @@
-resource "google_container_registry" "registry" {
-  project  = "my-project"
+resource "google_container_registry" "gcr" {
   location = "EU"
 }
